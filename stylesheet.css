@@ -1,0 +1,133 @@
+body 
+{
+    background-color: indigo;
+    /* background-image: url(stars.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; */
+    color: white;
+    font-family: "Consolas", "Lucida Console", monospace;
+}
+
+h1
+{
+    text-align: center;
+}
+
+ul.navbar 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    border-style: solid;
+    border-color: #dddddd;
+    background-color: #dddddd;
+    border-radius: 5px;
+    gap: 4px;
+}
+
+li 
+{
+    display: inline;
+}
+
+li a {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: darkgray;
+    background-color: darkgray;
+    color:white;
+}
+
+.myimage 
+{
+    display: block;
+   max-width: 70%;
+   max-height: auto;
+}
+.persbg 
+{
+    text-align: center;
+    flex: 33.33;
+    padding: 5px;
+}
+
+.container{
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.5);
+    animation: 500ms contain;
+}
+
+.container2
+{
+    border: 5px solid;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table,th,td
+{
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    border-collapse: collapse;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    animation: 2s contain2;
+}
+
+.currentpg {
+    color: purple;
+}
+
+.fos 
+{
+    align-items: center;
+    display:list-item;
+}
+
+@keyframes contain 
+{
+    from 
+    {
+        transform: scaleX(100%);
+        transform: scaleY(0%);
+        opacity: 10%;
+    }
+    to 
+    {
+        transform: scaleY(100%);
+        opacity: 100%;
+    }
+}
+
+@keyframes contain2
+{
+    from 
+    {
+        transform: scaleX(0%);
+        opacity: 10%;
+    }
+    to 
+    {
+        transform: scaleX(100%);
+        opacity: 100%;
+    }
+}
+
